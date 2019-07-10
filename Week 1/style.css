@@ -1,0 +1,40 @@
+body {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: justify;
+  line-height: 1.3;
+  font-size: 115%;
+}
+img {
+  padding: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 25%;
+}
+p {
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+}
+.onlyimage {
+  align-content: center;
+}
+.address {
+  text-align: center;
+}
+.wrap {
+  /*I NEED HELP HERE, when I resize the page, my floats stick out to the right. 
+I want them to be aligned with the rest of the text*/
+}
+.learning {
+  float: left;
+  margin-left: 10%;
+  border: 1px;
+  width: 40%;
+}
+.platforms {
+  float: right;
+  margin-left: 10%;
+  width: 40%;
+}
