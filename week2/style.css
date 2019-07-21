@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+header {
+  overflow-x: hidden;
+
+}
 
 body {
   margin: 0;
@@ -25,7 +29,7 @@ h2 {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 100%;
   }
   to {
     margin-left: 0%;
@@ -49,7 +53,7 @@ li {
 .grid-item {
   border: outset 5px;
   margin: 10px;
-  height: 550px;
+  height: 500px;
   text-align: center;
   padding: 20px;
   background-color: white;
@@ -89,6 +93,7 @@ img {
 @media (max-width: 767px) {
   .grid-item {
     width: calc(50% - 20px);
+    overflow-y: scroll;
   }
   .grid-item:nth-child(1) {
     width: calc(100% - 20px);
