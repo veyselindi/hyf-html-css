@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+hr {
+  border-color: #e1e1e1;
+}
+h2 {
+  padding: 5px 0px 15px 0px;
+}
+
+h3 {
+  color: #01689b;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.commonspecs {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1200px;
+  width: 100%;
+}
+body {
+  font-family: "PT Sans", Calibri, sans-serif;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.625;
+  font-size: 100%;
+ 
+}
+div {
+  clear: both;
+}
+/*HEADER*/
+
+.header {
+  text-align: center;
+  margin-left: 100px;
+  padding-left: 100px;
+}
+
+/*NAVBAR*/
+
+#navbar {
+  color: white;
+  background-color: #01689b;
+  
+}
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navhome {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  font-size: 1.375rem;
+  margin: auto 0 auto 0;
+  padding-left: 5vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.navbarlist {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  min-height: 70px;
+  overflow: hidden;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.navbarhome {
+  flex-grow: 1;
+  font-size: 1.150em;
+}
+.navbarlist li {
+  padding: 0 10px; 
+}
+
+/* Background Image Section*/
+
+#pic-search-shortcut {
+  display: flex;
+  height: 300px;
+  background-image: url("images/zomer.jpg");
+  background-size: cover;
+  position: relative;
+}
+#pic-search-shortcut .commonspecs {
+  position: relative;
+}
+#pic-search-shortcut ul {
+  background-color: white;
+  color: #01689b;
+  width: 18em;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  padding: 15px 15px 20px 25px;
+  font-weight: bold;
+}
+#pic-search-shortcut a {
+  text-decoration: none;
+}
+.topTaskNavigation {
+ 
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.searchbar {
+  position: absolute;
+  top: 30px; 
+  right: 20px;
+  
+}
+.searchbar input {
+  width: 300px;
+  padding: 10px 5px;
+  font-size: 1em; 
+}
+.topTaskNavigation li {
+}
+
+.trademark {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* GOVERNMENT LINKS*/
+
+#governmentlinks {
+  background-color: #f3f3f3;
+}
+.gvtlinks {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.4;
+}
+.float-item {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px;
+}
+.float-item h3 {
+  font-size: 1.4em;
+}
+
+.float-item a {
+  text-decoration: none;
+  color: #01689b;
+}
+
+.float-item p {
+  color: black;
+}
+
+/*SPOTLIGHT*/
+.spotlight{
+  padding: 50px 0;
+}
+#spotlight-list{
+  margin: 0 -15px ;
+}
+.spotlightsublist {
+  display: flex;
+  float: left;
+  height: 400px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 15px;
+}
+
+.spotlight img {
+  width: 100%;
+}
+
+/*News*/
+#newslist {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.newslistsub {
+  list-style: none;
+  margin: 15px;
+}
+.date {
+  font-weight: bold;
+  padding: 10px 0;
+}
+.morenews{
+  color: #01689b;
+}
+
+/*Questions*/
+.questions {
+  border: #e1e1e1 solid 3px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 35px 0;
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.questionslistsub {
+  list-style: none;
+}
+.questions p {
+  font-size: 23px;
+  word-wrap: normal;
+  padding: 30px;
+}
+.questions h3 {
+  color: #17628c;
+  font-weight: bold;
+  font-size: 31px;
+  text-align: center;
+}
+
+/*LASTDIV*/
+
+.lastdivbackground {
+  background-color: #01689b;
+  color: white;
+}
+
+.lastdiv {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 10px;
+  min-height: 250px;
+  align-items: center;
+}
+.lastdiv1,
+.lastdiv2 {
+  margin: 10px;
+  padding: 10px;
+  min-width: 200px;
+}
+.lastdiv p {
+  font-size: 1.5em;
+}
+.lastdiv a {
+  color: white;
+  text-decoration: none;
+}
+
+/* desktop version */
+@media (min-width: 1025px) {
+
+  body {
+    font-size: 110%;
+  }
+  .float-item {
+    width: calc(100% / 4 - 50px);
+  }
+  .spotlightsublist {
+    width: calc(100% / 3 - 30px);
+  }
+  .newslistsub {
+    width: calc(100% / 3 - 30px);
+  }
+  
+}
+
+/* tablet version */
+@media (min-width: 700px) {
+
+  body {
+    font-size: 110%;
+  }
+  .float-item {
+    width: calc(100% / 4 - 50px);
+  }
+  .spotlightsublist {
+    width: calc(100% / 3 - 30px);
+  }
+  .newslistsub {
+    width: calc(100% / 3 - 30px);
+  }
+  
+}
+
+/* mobile version */
+@media (max-width: 699px) {
+
+  body {
+    font-size: 110%;
+  }
+  .float-item {
+    width: calc(100% / 4 - 50px);
+  }
+  .spotlightsublist {
+    width: calc(100% / 3 - 30px);
+  }
+  .newslistsub {
+    width: calc(100% / 3 - 30px);
+  }
+ 
+}
