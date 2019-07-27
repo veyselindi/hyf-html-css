@@ -21,13 +21,17 @@ a {
   text-decoration: none;
 }
 
+h3 a:hover {
+  text-decoration: underline;
+}
+
 .commonspecs {
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1300px;
+  width: 90%;
 }
 body {
   font-family: "PT Sans", Calibri, sans-serif;
@@ -35,7 +39,6 @@ body {
   font-size: 1.125rem;
   line-height: 1.625;
   font-size: 100%;
- 
 }
 div {
   clear: both;
@@ -53,7 +56,6 @@ div {
 #navbar {
   color: white;
   background-color: #01689b;
-  
 }
 #navbar a {
   text-decoration: none;
@@ -85,10 +87,10 @@ div {
 }
 .navbarhome {
   flex-grow: 1;
-  font-size: 1.150em;
+  font-size: 1.15em;
 }
 .navbarlist li {
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 /* Background Image Section*/
@@ -116,25 +118,31 @@ div {
   text-decoration: none;
 }
 .topTaskNavigation {
- 
   position: absolute;
   left: 0;
   top: 30px;
 }
 .searchbar {
   position: absolute;
-  top: 30px; 
+  top: 30px;
   right: 20px;
-  
 }
 .searchbar input {
   width: 300px;
   padding: 10px 5px;
-  font-size: 1em; 
+  font-size: 1em;
 }
 .topTaskNavigation li {
+  color: #01689b;
 }
 
+.topTaskNavigation li a {
+  color: #01689b;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 .trademark {
   position: absolute;
   bottom: 10px;
@@ -162,9 +170,8 @@ div {
   font-size: 1.4em;
 }
 
-.float-item a {
+.float-item a p {
   text-decoration: none;
-  color: #01689b;
 }
 
 .float-item p {
@@ -172,11 +179,11 @@ div {
 }
 
 /*SPOTLIGHT*/
-.spotlight{
+.spotlight {
   padding: 50px 0;
 }
-#spotlight-list{
-  margin: 0 -15px ;
+#spotlight-list {
+  margin: 0 -15px;
 }
 .spotlightsublist {
   display: flex;
@@ -205,7 +212,7 @@ div {
   font-weight: bold;
   padding: 10px 0;
 }
-.morenews{
+.morenews {
   color: #01689b;
 }
 
@@ -267,7 +274,6 @@ div {
 
 /* desktop version */
 @media (min-width: 1025px) {
-
   body {
     font-size: 110%;
   }
@@ -280,41 +286,36 @@ div {
   .newslistsub {
     width: calc(100% / 3 - 30px);
   }
-  
 }
 
 /* tablet version */
-@media (min-width: 700px) {
-
+@media (max-width: 1024px) {
   body {
-    font-size: 110%;
+    font-size: 100%;
   }
   .float-item {
-    width: calc(100% / 4 - 50px);
+    width: calc(100% / 2 - 50px);
   }
   .spotlightsublist {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
   }
   .newslistsub {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
   }
-  
 }
 
 /* mobile version */
 @media (max-width: 699px) {
-
   body {
-    font-size: 110%;
+    font-size: 100%;
   }
   .float-item {
-    width: calc(100% / 4 - 50px);
+    width: calc(100% - 50px);
   }
   .spotlightsublist {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
   }
   .newslistsub {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 2 - 30px);
   }
- 
 }
